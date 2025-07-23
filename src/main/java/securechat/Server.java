@@ -17,6 +17,7 @@ public class Server {
         // Hardcoded users
         userDB.put("alice", new User("alice", "password123"));
         userDB.put("bob", new User("bob", "password456"));
+        userDB.put("charlie", new User("charlie", "password789"));
 
         while (true) {
             Socket clientSocket = serverSocket.accept();
