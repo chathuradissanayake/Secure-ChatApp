@@ -9,8 +9,12 @@ import java.util.Base64;
 
 public class Client1 {
     private static final Map<String, String> encryptionKeys = Map.of(
-            "alice->bob", "alicebobkey12345",   // exactly 16 chars
-            "bob->alice", "bobalicekey12345"    // exactly 16 chars
+            "alice->bob", "alicebobkey12345",   // 16 chars
+            "bob->alice", "bobalicekey12345",  // 16 chars
+            "charlie->bob", "charbobkey123456",  // 16 characters
+            "bob->charlie", "bobcharkey123456" ,  // 16 characters
+            "charlie->alice", "char2alicekey789",    //  16 chars
+            "alice->charlie", "alicetocharlie99"   // 16 chars
     );
 
     private static String username;
@@ -77,7 +81,7 @@ public class Client1 {
                             } else {
                                 System.out.println("\n" + msg);
                             }
-                            System.out.print("You: ");
+                            System.out.print("Send to (username) ");
                         }
                     } catch (IOException e) {
                         System.out.println("Disconnected from server.");
