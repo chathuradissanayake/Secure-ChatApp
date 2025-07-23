@@ -11,8 +11,8 @@ public class Client2 {
     private static final Map<String, String> encryptionKeys = Map.of(
             "alice->bob", "alicebobkey12345",   // 16 chars
             "bob->alice", "bobalicekey12345",  // 16 chars
-            "charlie->bob", "charbobkey123456",  // 16 characters
-            "bob->charlie", "bobcharkey123456" ,  // 16 characters
+            "charlie->bob", "charbobkey123456",  // 16 chars
+            "bob->charlie", "bobcharkey123456" ,  // 16 chars
             "charlie->alice", "char2alicekey789",    // 16 chars
             "alice->charlie", "alicetocharlie99"    // 16 chars
     );
