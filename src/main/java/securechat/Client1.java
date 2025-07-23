@@ -7,7 +7,7 @@ import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 import java.util.Base64;
 
-public class Client {
+public class Client1 {
     private static final Map<String, String> encryptionKeys = Map.of(
             "alice->bob", "alicebobkey12345",   // exactly 16 chars
             "bob->alice", "bobalicekey12345"    // exactly 16 chars

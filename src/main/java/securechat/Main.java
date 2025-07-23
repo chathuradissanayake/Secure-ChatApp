@@ -11,7 +11,7 @@ public class Main {
         if (choice == 1) {
             Server.main(null);
         } else {
-            Client.main(null);
+            Client1.main(null);
         }
     }
 }
